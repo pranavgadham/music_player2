@@ -1,0 +1,147 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/* ----------------------------- toggle switch --------------------------------- */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+header label{
+    height: 30px;
+    width: 70px;
+    display: inline-block;
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 200px;
+    position: relative;
+    margin: 5px;
+    transition: 0.5s;
+}
+header input{
+    width: 0%;
+    height: 0%;
+    opacity: 0%;
+}
+header label:after{
+    content: "";
+    height: 25px;
+    width: 25px;
+    display: block;
+    position: absolute;
+    top:2px;
+    left:4px;
+    border-radius: 50%;
+    background-color:rgb(253, 184, 19);
+    transition: 0.5s;
+}
+header input:checked + label{
+    background-color: lightgray;
+}
+header input:checked + label:after{
+    background-color: black;
+    left: 40px;
+    transition: 0.5s;
+}
+section h2{
+    text-align: center;
+}
+.fontcolor{
+    color: white;
+}
+.background{
+    background-color:rgb(0, 191, 255);
+}
+/* ------------------------------------------ Continer --------------------------------------- */
+#Continer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    gap: 10px;
+    margin: 2%;
+}
+/* ------------------------------------------ left Continer --------------------------------------- */
+#leftContiner{
+    width: 30%;
+    padding: 2%;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+}
+#leftContiner select{
+    background-color: inherit;
+}
+#leftContiner h4{
+    text-align: center;
+}
+#songList{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1%;
+    padding: 5%;
+}
+.songElement{
+    text-align: center;
+    margin: 2% 0% 2% 0%;
+}
+.songElement:hover{
+    background-color: blue;
+}
+/* ------------------------------------------ Middle Continer --------------------------------------- */
+#middleContiner{
+    width: 30%;
+    display: flex;
+    padding: 2%;
+    flex-direction: column;
+    justify-content:space-around;
+    gap: 20px;
+    align-items: center;
+    box-sizing: border-box;
+}
+#SongInfo img{
+    width: 100%;
+}
+#SongInfo p{
+    font-size: small;
+}
+#middleContiner audio{
+    width: 80%;
+    margin-left: 10%;
+}
+#playlist,#previousButton,#nextButton{
+    color: white;
+    padding: 5px;
+    background-color: blue;
+}
+#playlist:hover,#previousButton:hover,#nextButton:hover{
+    background-color:black;
+}
+/* ------------------------------------------ Right Continer --------------------------------------- */
+#rightContiner{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 2%;
+    gap: 1%;
+    box-sizing: border-box;
+}
+.clicked{
+    background-color: blue;
+}
+@media screen and (max-width:950px) {
+    #Continer{
+        flex-direction: column;
+        align-items: center;
+    }
+    #leftContiner,#middleContiner,#rightContiner{
+        width: 80%;
+    }
+}

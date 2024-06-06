@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="toggleSwitch" id="toggleSwitch">
+        <label for="toggleSwitch"></label>
+    </header>
+
+    <section>
+        <h2 >Music Player</h2>
+
+        <div id="Continer" class="fontcolor">
+
+            <div id="leftContiner" class="background">
+                <div class="header">
+                    <p>Filter by Genre : </p>
+                    <select id="genre">
+                        <option>All</option>
+                        <option>Rock</option>
+                        <option>Pop</option>
+                        <option>Hip Hop</option>
+                    </select>
+                </div>
+                <h4>All Songs</h4>
+                <div id="songList">
+                </div>
+            </div>
+
+            <div id="middleContiner" class="background">
+                <div id="SongInfo">
+                    <img src = './assets/Attharintiki-Daredhi.jpg' id="songImage"/>
+                    <h3 id="songTitle">Kirraku</h3>
+                    <p id="songArtist">David Simon</p>
+                </div>
+                <audio src="./assets/Kirraku.mp3" id="audioTag" controls></audio>
+                <div id="buttonContiner">
+                    <button type="button" id="previousButton">&lt;=</button>
+                    <button type="button" id="nextButton">=&gt;</button>
+                </div>
+                <button type="submit" id="playlist">Add to playlist</button>
+            </div>
+            <div id="rightContiner" class="background">
+                <form>
+                    <input type="text" placeholder="Playlist Name" id="input">
+                    <button type="button" id="createButton">Create Playlist</button>
+                </form>
+                <h3>Current Playlist</h3>
+                <div id="currentPlaylist">
+                </div>
+                <h3>All Playlist</h3>
+                <div id="allPlaylist">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

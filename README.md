@@ -1,0 +1,1 @@
+This is my second attempt at creating a music player website, built with HTML, CSS, and basic JavaScript. The improved UI and design offer a more polished user experience, though there is still room for further enhancements. Each iteration brings me closer to mastering web development. Feedback for improvement is welcome as I continue to refine my skills.

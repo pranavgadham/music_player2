@@ -64,6 +64,7 @@ toggleButton.addEventListener('click', () => {
             element.style.backgroundColor = 'rgb(55, 55, 55)';
         });
         document.body.style.backgroundColor = 'black';
+        document.querySelector('#heading').style.color = 'white';
 
     } else {
         let elements = document.querySelectorAll('.background');
@@ -71,6 +72,7 @@ toggleButton.addEventListener('click', () => {
             element.style.backgroundColor = 'rgb(0, 191, 255)';
         });
         document.body.style.backgroundColor = 'white';
+        document.querySelector('#heading').style.color = 'black';
     }
 });
 
